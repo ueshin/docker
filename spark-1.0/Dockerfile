@@ -8,9 +8,8 @@ RUN useradd -m -s /bin/bash spark
 
 USER spark
 WORKDIR /home/spark
-RUN git clone https://github.com/apache/spark.git
+RUN git clone -b v1.0.2 https://github.com/apache/spark.git
 WORKDIR /home/spark/spark
-RUN git checkout v1.0.2
 RUN sbt/sbt -Phive assembly
 
 ENTRYPOINT bin/spark-shell
