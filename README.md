@@ -24,6 +24,18 @@ docker build -t spark spark
 
 Build ubuntu-java8 in advance.
 
+## spark-1.1
+
+Build Apache Spark 1.1.x on ubuntu-java8.
+
+### build
+
+```bash
+docker build -t spark:1.1.0-rc2 spark-1.1
+```
+
+Build ubuntu-java8 in advance.
+
 ## spark-1.0
 
 Build Apache Spark 1.0.x on ubuntu-java8.
