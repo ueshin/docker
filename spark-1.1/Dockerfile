@@ -13,4 +13,4 @@ WORKDIR /home/spark/spark
 RUN rm -rf .git
 RUN sbt/sbt -Phive assembly
 
-ENTRYPOINT bin/spark-shell
+ENTRYPOINT ["bin/spark-shell"]

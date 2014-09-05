@@ -12,4 +12,4 @@ RUN git clone https://github.com/apache/spark.git
 WORKDIR /home/spark/spark
 RUN sbt/sbt -Phive assembly
 
-ENTRYPOINT bin/spark-shell
+ENTRYPOINT ["bin/spark-shell"]
