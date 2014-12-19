@@ -31,7 +31,7 @@ Build Apache Spark 1.2.x on ubuntu-java8.
 ### build
 
 ```bash
-docker build -t spark:1.2.0-rc1 spark-1.2
+docker build -t spark:1.2.0 spark-1.2
 ```
 
 Build ubuntu-java8 in advance.
